@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页面(今日抢购第一张图片的商品 ) </title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/product.min.css"/>
+		<script src="../../dist/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../dist/js/jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="head"></div>
+		<div id="mainBox">
+			<div id="pathBox">
+				<div id="path">
+					<a href="index.html">首页	 /</a>
+					<a href="list.html">AXON系列	 /</a>
+					<a>ZTE中兴 Blade V10  夜空黑/全网通/4GB+64GB</a>
+				</div>
+			</div>
+			
+			<div id="goods">
+				
+				<!--放大镜和图片列表-->
+				<div id="goodImgBox" class="left">
+					
+					<div id="goodImg">
+						<div class="small_pic">
+							<span class="mark"></span>   <!--遮罩层-->
+							<span class="float_layer"></span>
+							<img src="../../dist/images/pro21.jpg" />
+						</div>
+						<div class="big_pic">
+							<img src="../../dist/images/pro1.png" />
+						</div>
+					</div>
+					
+					<div id="ImgSlide">
+						<div id="prev" class="left">
+							<a href="javascript:;"><img src="../../dist/images/left-1.png"/></a>
+						</div>
+						<div id="picList" class="left">
+							<ul>
+								<li><a href="javascript:;"><img class="piclist-img" src="../../dist/images/pro1.png"/></a></li>
+								<li><a href="javascript:;"><img class="piclist-img" src="../../dist/images/pro2.png"/></a></li>
+								<li><a href="javascript:;"><img class="piclist-img" src="../../dist/images/pro3.png"/></a></li>
+								<li><a href="javascript:;"><img class="piclist-img" src="../../dist/images/pro4.png"/></a></li>
+								<li><a href="javascript:;"><img class="piclist-img" src="../../dist/images/pro5.png"/></a></li>
+							</ul>
+						</div>
+						<div id="next" class="left">
+							<a href="javascript:;"><img src="../../dist/images/right-1.png"/></a>
+						</div>
+					</div>
+				
+				</div>
+				
+				<!--商品购买数据详情-->
+				<div id="goodDetailBox" class="left">
+					<div id="detailTit">
+						<span>ZTE中兴 Blade V10</span>
+						<span>夜空黑/全网通/4GB+64GB</span>
+						<span>【准旗舰新品】准旗舰CPU 3200万AI自拍 高清水滴屏 超强续航 双卡双待全网通4G手机</span>
+						<span>￥<span class="titMoney">1499</span></span>
+					</div>
+					<div id="detailMain">
+						<div id="color">
+							<span>颜色</span>
+							<ul>
+								<li><a href="javascript:;"><img src="../../dist/images/pro41.jpg"/>`夜空黑</a></li>
+								<li><a href="javascript:;"><img src="../../dist/images/pro42.jpg"/>`经典蓝</a></li>
+								<li><a href="javascript:;"><img src="../../dist/images/pro43.jpg"/>`多彩蓝</a></li>
+							</ul>
+						</div>
+						<div id="system">
+							<span>制式</span>
+							<ul><li><a href="javascript:;">全网通</a></li></ul>
+						</div>
+						<div id="versions">
+							<span>版本</span>
+							<ul>
+								<li><a href="javascript:;" class="one">4GB+64GB</a></li>
+								<li><a href="javascript:;" class="two">4GB+128GB</a></li>
+							</ul>
+						</div>
+						<div id="number">
+							<form>
+								<button class="sub">-</button><input type="text" name="" id="txt" value="1" data-now=""/><button class="add">+</button>
+							</form>
+						</div>
+					</div>
+					<div id="detailBtn">
+						<div id="inCart">
+							<a href="javascript:;">加入购物车</a>
+						</div>
+						<div id="nowBuy">
+							<a href="javascript:;">立即购买</a>
+						</div>
+					</div>
+				</div>		
+			
+			</div>
+			
+		</div>
+		<div id="foot"></div>
+		<script type="text/javascript" src="../../dist/js/ajax.min.js" ></script>
+		<script src="../../dist/js/product.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--<script src="../js/ES6JS/product.js" type="text/javascript" charset="utf-8"></script>-->
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/register.min.css"/>
+		<script src="../../dist/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../dist/js/jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="containers">
+				<nav class="navbar">
+					<ul class="left-navbar">
+						<li><a href="#">手机版</a></li>
+						<li><a href="#">企业采购</a></li>
+						<li><a href="#">商城公告</a></li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+					<ul class="right-navbar">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="maincontainer-box">
+			<div class="maincontainer">
+				<div class="adv">
+					<img src="../images/adv.png" >
+				</div>
+				<div class="signup">
+					<div class="signup-title">
+						欢迎注册
+					</div>
+					<div class="signup-body">
+						<form action="" method="post" class="signup-form">
+							<div class="form-group">
+								<input type="text" id="name" autocomplete="off" placeholder="仅支持手机号"/>
+								<span id="nameSpan">仅支持手机注册</span>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" id="password" placeholder="登录密码" />
+								<span id="passSpan1">密码6到8位</span>
+							</div>
+							<div class="form-group">
+								<input type="password" name="againPass" id="againPass" placeholder="再次输入登录密码" />
+								<span id="passSpan2">密码不相同</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="code" id="code" placeholder="验证码" />
+								<input type="button" name="changeCode" id="changeCode" value="更换验证码" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="message" id="message" placeholder="短信验证码" />
+								<input type="button" name="getMessage" id="getMessage" value="获取短信验证码" />
+							</div>
+							<div class="form-group">
+								<input type="checkbox" name="aggrement" id="aggrement" value="" />
+								同意<a href="#">《服务协议》</a>
+							</div>
+							<div class="form-group">
+								<input type="button" name="registerNow" id="registerNow" value="立即注册" />
+							</div>
+							<div class="form-group">
+								已有账号？
+								<a href="#" id="login">立即登录</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="foot"></div>
+		
+		<script type="text/javascript" src="../../dist/js/register.min.js"></script>
+		<script type="text/javascript" src="../../dist/js/ajax.min.js" ></script>
+		<script src="../../dist/js/public.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--<script src="../js/ES6JS/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ES6JS/ajax.js" type="text/javascript" charset="utf-8"></script>-->
+	</body>
+</html>

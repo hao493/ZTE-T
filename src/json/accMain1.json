@@ -1,0 +1,24 @@
+[ 
+	{
+		"img" : "../../dist/images/main1.jpg",
+		"tit" : "A2019 Pro天机9智能扩展坞",
+		"money" : "￥299"
+	
+	},
+	{
+		"img" : "../../dist/images/main2.jpg",
+		"tit" : "中兴天机Axon M折叠真皮",
+		"money" : "￥299" 
+	},
+	{
+		"img" : "../../dist/images/main3.jpg",
+		"tit" : "天机Axon 9无线充电座",
+		"money" : "￥199"
+	},
+	{
+		"img" : "../../dist/images/main4.jpg",
+		"tit" : "中兴天机Axon M折叠车载",
+		"money" : "￥69"
+	}
+
+]

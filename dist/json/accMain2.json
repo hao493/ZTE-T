@@ -1,0 +1,24 @@
+[
+	{
+		"img" : "../../dist/images/main5.jpg",
+		"tit" : "5000mAh移动电源",
+		"money" : "￥99"
+	
+	},
+	{
+		"img" : "../../dist/images/main6.jpg",
+		"tit" : "2550mAh卡片式移动电源",
+		"money" : "￥34.9" 
+	},
+	{
+		"img" : "../../dist/images/main7.jpg",
+		"tit" : "5000mAh移动电源 轻薄金属机身",
+		"money" : "￥59"
+	},
+	{
+		"img" : "../../dist/images/main8.jpg",
+		"tit" : "P52 卡片式移动电源",
+		"money" : "￥59"
+	}
+
+] 

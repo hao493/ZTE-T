@@ -1,0 +1,107 @@
+@import "public";
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section{
+	width:100%;
+	background:#f8f8f8;
+	#list-ul{
+	    width:1230px;
+		text-align:center;
+		margin:auto;
+		background:pink;
+		display: block;
+		li{
+		    width:600px;
+		    height:600px;
+		    float:left;
+		    border:1px solid #ddd;
+		    background:#fff;
+		    margin-bottom:20px;
+            margin-top:15px;
+            -webkit-transition: all .2s linear; /*渐变效果*/
+            transition: all .2s linear;
+		    a{
+                display:inline-block;
+                width:100%;
+                height:100%;
+                span{
+                    text-align:center;
+                }
+                span:nth-of-type(1){
+                    padding-top:20px;
+                    display:block;
+                    height:370px;
+                    width:500px;
+                    margin:0 auto;
+                    img{
+                        height:350px;
+                        width:350px;
+                    }
+                }
+                span:nth-of-type(2){
+                    display:block;
+                    height:24px;
+                    width:350px;
+                    margin:65px auto 25px;
+                    line-height:24px;
+                    color:#000;
+                    font-size:24px;
+                }
+                span:nth-of-type(3){
+                    display:block;
+                    height:15px;
+                    font-size:14px;
+                    overflow: hidden;
+                    width:250px;
+                    margin:0 auto 15px;
+                    color:#b0b0b0;
+                    line-height:15px;
+                }
+                span:nth-of-type(4){
+                    overflow: hidden;
+                    display:block;
+                    height:50px;
+                    overflow: hidden;
+                    width:300px;
+                    margin:0 auto 35px;
+                    color:red;
+                    line-height:42px;
+                    font-weight: 600;
+                    font-size:14px;
+                    P{
+                        font-size:26px;
+                        color:orangered;
+                    }
+                    p:nth-child(1){
+                        display: block;
+                        height:42px;
+                        float:left;
+                    }
+                    p:nth-child(2){
+                        display: block;
+                        height:42px;
+                        width:150px;
+                        border:1px solid orangered;
+                        line-height:42px;
+                        height:42px;
+                        font-size:12px;
+                        float: right;
+                    }
+                }
+            }
+        }
+        li:hover{
+            position: relative;
+            -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.5);    /*添加阴影*/
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            -webkit-transform: translate3d(0, -5px, 0);     /*向上浮动*/
+            transform: translate3d(0, -5px, 0);
+        }
+		li:nth-child(odd){
+		    margin-right:30px;
+		}
+	}
+}

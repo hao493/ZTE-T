@@ -1,0 +1,24 @@
+[
+	{
+		"img" : "../../dist/images/main9.jpg",
+		"tit" : "小球音响 S201",
+		"money" : "￥49"
+	
+	},
+	{
+		"img" : "../../dist/images/main10.jpg",
+		"tit" : "竹韵耳机 SOH",
+		"money" : "￥79" 
+	},
+	{
+		"img" : "../../dist/images/main11.png",
+		"tit" : "线控耳机",
+		"money" : "￥49"
+	},
+	{
+		"img" : "../../dist/images/main12.jpg",
+		"tit" : "线控耳机(美标)",
+		"money" : "￥49"
+	}
+
+] 

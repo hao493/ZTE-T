@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/login.min.css"/>
+		<script src="../../dist/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../dist/js/jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="containers">
+				<nav class="navbar">
+					<ul class="left-navbar">
+						<li><a href="#">手机版</a></li>
+						<li><a href="#">企业采购</a></li>
+						<li><a href="#">商城公告</a></li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+					<ul class="right-navbar">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="maincontainer-box">
+			<div class="maincontainer">
+				<div class="adv">
+					<img src="../images/adv.png" >
+				</div>
+				<div class="signup">
+					<div class="signup-title">
+						欢迎登陆
+					</div>
+					<div class="signup-body">
+						<!--手机验证码登录-->
+						<form action="" method="post" class="signup-form1">
+							<div class="form-group">
+								<input type="text" name="name" id="name1" autocomplete="off" placeholder="仅支持手机号发不了验证码请切换账号密码登录" />
+								<span id="nameSpan1">手机号错误</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="code" id="code1" autocomplete="off" placeholder="验证码" />
+								<input type="button" name="changeCode" id="changeCode1" value="更换验证码" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="message" id="message" autocomplete="off" placeholder="短信验证码" />
+								<input type="button" name="getMessage" id="getMessage" value="获取短信验证码" />
+							</div>
+							<div class="form-group">
+								<input type="button" name="registerNow" id="registerNow1" value="立即登陆" />
+							</div>
+							<div class="form-group">
+								<a href="javascript:;" class="login1">账号密码登陆</a>
+								<a href="javascript:;" id="register1">立即注册</a>
+								<a href="javascript:;" id="forgot2">忘记密码?</a>
+							</div>
+						</form>
+						<!--用户密码登录-->
+						<form action="" method="post" class="signup-form2">
+							<div class="form-group">
+								<input type="text" name="name" id="name2" autocomplete="off" placeholder="仅支持手机号" />
+								<span id="nameSpan2">账号没注册</span>
+							</div>
+							
+							<div class="form-group formPass">
+								<input type="password" name="pass" id="pass"  placeholder="请输入密码" />
+								<span id="passSpan">密码错误</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="code" id="code2" autocomplete="off" placeholder="验证码" />
+								<input type="button" name="changeCode" id="changeCode2" value="更换验证码" />
+							</div>
+							<div class="form-group">
+								<input type="button" name="registerNow" id="registerNow2" value="立即登陆" />
+							</div>
+							<div class="form-group">
+								<a href="javascript:;" class="login2">手机验证码登陆</a>
+								<a href="javascript:;" id="register2">立即注册</a>
+								<a href="javascript:;" id="forgot2">忘记密码?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="foot"></div>
+		
+		<!--<script type="text/javascript" src="../js/ES6JS/login.js"></script>-->
+		<script src="../../dist/js/public.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../dist/js/login.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
