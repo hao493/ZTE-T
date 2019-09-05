@@ -1,7 +1,7 @@
 //引入头部
-$("#head").load("../../src/html/header.html");
+$("#head").load("../../src/html/header.html"); 
 //引入尾部
-$('#foot').load("../../src/html/footer.html");
+$('#foot').load("../../src/html/footer.html"); 
 //商品goodImg(大盒子)let oBigBox = $('#div1');
 $goodImg = $('#goodImg');
 //2. 获取小图所在的盒子$oSmallPic
@@ -16,14 +16,14 @@ $bigPic = $('.big_pic');
 //6. 大图
 $bigImg = $('.big_pic img');
 //给遮罩添加移入移出事件
-$mark.mouseenter(function(){
-	$float.css("display","block");
-	$bigPic.css("display","block");
-})
-$mark.mouseleave(function(){
-	$float.css("display","none");
-	$bigPic.css("display","none");
-})
+$mark.mouseenter(function(){ 
+	$float.css("display","block"); 
+	$bigPic.css("display","block"); 
+}) 
+$mark.mouseleave(function(){ 
+	$float.css("display","none"); 
+	$bigPic.css("display","none"); 
+}) 
 //9. 给遮罩添加移动事件
 $mark[0].onmousemove = function(evt){
 	let e = evt || window.event;
@@ -115,9 +115,9 @@ $versions.click(function(){
 	}
 })
 //加减数量
-$numberTxt = $('#number #txt');
-$sub = $('.sub');
-$add = $('.add');
+$numberTxt = $('#number #txt');  
+$sub = $('.sub'); 
+$add = $('.add');  
 //获取默认数量
 proArr.num = $numberTxt.val()
 //输入数量，失焦时获取数量
@@ -172,42 +172,42 @@ window.onload = function(){
 	//给加入购物车按钮添加点击事件
 	$inCart.click(function(){
 		//根据选择不同，得到不同id
-		if(proArr.versions == "4GB+64GB"){
-			if(proArr.color == "夜空黑"){
-				proArr.id = 1;
-			}else if(proArr.color == "经典蓝"){
-				proArr.id = 2;
-			}else if(proArr.color == "多彩蓝"){
-				proArr.id = 3;
-			}
-		}else if(proArr.versions == "4GB+128GB"){
-			if(proArr.color == "夜空黑"){
-				proArr.id = 4;
-			}else if(proArr.color == "经典蓝"){
-				proArr.id = 5;
-			}else if(proArr.color == "多彩蓝"){
-				proArr.id = 6;
-			}
-		}
+		if(proArr.versions == "4GB+64GB"){ 
+			if(proArr.color == "夜空黑"){ 
+				proArr.id = 1; 
+			}else if(proArr.color == "经典蓝"){ 
+				proArr.id = 2; 
+			}else if(proArr.color == "多彩蓝"){ 
+				proArr.id = 3; 
+			}  
+		}else if(proArr.versions == "4GB+128GB"){ 
+			if(proArr.color == "夜空黑"){  
+				proArr.id = 4; 
+			}else if(proArr.color == "经典蓝"){ 
+				proArr.id = 5; 
+			}else if(proArr.color == "多彩蓝"){ 
+				proArr.id = 6; 
+			} 
+		} 
 		//获取商品id
 		var goodId = proArr.id;
 		//获取cookie
-		var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+		var cartStr = $.cookie("cart") ? $.cookie("cart") : ""; 
 		//将字符串转成对象(获取的cookie一定为字符串)
 		var cartObj = convertCartStrToObj(cartStr);
 		//判断该商品是否已经在购物车中存在，(当前id如果已经存在，则直接加1)
 		if(goodId in cartObj){
 			//如果已存在，那么该商品的数量加上目前选择的num数量
-			cartObj[goodId].num += parseInt(proArr.num);
+			cartObj[goodId].num += parseInt(proArr.num); 
 		}else{//如果不存在，那么将新商品的信息存入
 			cartObj[goodId] = {
-				id : proArr.id,
-				img : proArr.img,
-				color : proArr.color,
-				system : proArr.system,
-				versions : proArr.versions,
-				num : proArr.num,
-				money : proArr.money
+				id : proArr.id, 
+				img : proArr.img, 
+				color : proArr.color, 
+				system : proArr.system, 
+				versions : proArr.versions, 
+				num : proArr.num, 
+				money : proArr.money 
 			};
 		}
 		//将对象转为字符串
@@ -220,7 +220,7 @@ window.onload = function(){
 	})
 }
 //将获取的cookie字符串转对象
-function convertCartStrToObj(cartStr){
+function convertCartStrToObj(cartStr){ 
 	//如果是空字符串，即没有购物车cookie信息，那么购物车为空，直接返回一个空对象
 	if(!cartStr){
 		return {};
@@ -243,16 +243,16 @@ function convertCartStrToObj(cartStr){
 	}
 	return obj;
 }
-function convertObjToCartStr(obj){
-	var cartStr = "";
+function convertObjToCartStr(obj){ 
+	var cartStr = ""; 
 	//遍历对象
 	//根据id不同cookie中存放多个id不同的对象，
-	for(var id in obj){
-		if(cartStr){
-			cartStr += ":";
-		}
+	for(var id in obj){ 
+		if(cartStr){ 
+			cartStr += ":"; 
+		} 
 		//每一条id对象设置成字符串 
-		cartStr += obj[id].id + "," + obj[id].img + "," + obj[id].color + "," + obj[id].system + "," + obj[id].versions + "," + obj[id].num + "," + obj[id].money ;
-	}
-	return cartStr;
+		cartStr += obj[id].id + "," + obj[id].img + "," + obj[id].color + "," + obj[id].system + "," + obj[id].versions + "," + obj[id].num + "," + obj[id].money ; 
+	} 
+	return cartStr; 
 }

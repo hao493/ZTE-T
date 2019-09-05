@@ -36,13 +36,13 @@ $(function () {
       $('#passSpan2').css("display", "block");
     }
   }); //	//判断四位验证码是否正确
-  //	$('#code').blur(function(){
-  //		
-  //	})
-  //	//更换验证码的点击事件
-  //	$('#changeCode').click(function(){
-  //		
-  //	})
+  	$('#code').blur(function(){
+  		
+  	})
+  	//更换验证码的点击事件
+  	$('#changeCode').click(function(){ 
+  		
+  	})
   //注册按钮点击事件(表单提交验证)
 
   $('#registerNow').click(function () {
